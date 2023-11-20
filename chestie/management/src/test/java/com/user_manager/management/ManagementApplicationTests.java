@@ -12,9 +12,8 @@ class ManagementApplicationTests {
  @Autowired
 	UserServices userServices;
 	@Test
-	void registerUser(){
-		User user = new User();
-		userServices.registerNewUserServiceMethod("y111" , "y1" , "y2" , "y3" , "y4" , "y5");
+	void DeleteUser(){
+		userServices.deleteUser("test.test");
 	}
 
 

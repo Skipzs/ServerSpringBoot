@@ -13,8 +13,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public interface UserRepository extends CrudRepository<User, Integer> {
-
+public interface UserRepository extends CrudRepository<User, String> {
+    @Transactional
+    @Modifying
+    @Query(value = "DELETE FROM angajati WHERE username = :username", nativeQuery = true)
+    void deleteByUsername(@Param("username") String username);
     @Query(value = "SELECT username FROM angajati WHERE username = :username",nativeQuery = true)
     List<String> checkUsername(@Param("username")String username);
 

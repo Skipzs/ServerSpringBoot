@@ -10,5 +10,15 @@ public class DeleteUserController {
     @Autowired
     private UserServices userServices;
 
+    @DeleteMapping("/angajati/deleteAngajat/{nume}/{prenume}")
+    public void deleteUser(@PathVariable String nume, @PathVariable String prenume) {
+        String username = constructUsername(nume, prenume);
+        userServices.deleteUser(username);
+    }
+
+    private String constructUsername(String firstname, String lastname) {
+        // Customize this method based on your username construction logic
+        return lastname.toLowerCase() + "." + firstname.toLowerCase();
+    }
 
 }
