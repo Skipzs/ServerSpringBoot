@@ -6,6 +6,7 @@ import com.user_manager.management.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.util.Streamable;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +34,10 @@ public class UserServices {
         Streamable.of(userRepository.findAll()).forEach(user::add);
         return user;
     }
+    public void deleteUser(String username) {
+        userRepository.deleteByUsername(username);
+    }
+
 
     //Get user details by his username
     public User getUserDetailsByUsername(String username){
