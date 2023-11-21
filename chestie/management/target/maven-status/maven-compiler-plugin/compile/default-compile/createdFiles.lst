@@ -1,3 +1,5 @@
+com\user_manager\management\models\Camere.class
+com\user_manager\management\models\ChangePass.class
 com\user_manager\management\rest_controllers\UserControler.class
 com\user_manager\management\ManagementApplication.class
 com\user_manager\management\rest_controllers\SignUpController.class
@@ -5,7 +7,11 @@ com\user_manager\management\models\Login.class
 com\user_manager\management\models\ShowUser.class
 com\user_manager\management\rest_controllers\DeleteUserController.class
 com\user_manager\management\rest_controllers\LoginController.class
+com\user_manager\management\rest_controllers\CamereShowController.class
+com\user_manager\management\services\CamereServices.class
 com\user_manager\management\services\UserServices.class
+com\user_manager\management\rest_controllers\UpdatePasswordController.class
 com\user_manager\management\repository\UserRepository.class
 com\user_manager\management\rest_controllers\ShowUsersController.class
 com\user_manager\management\models\User.class
+com\user_manager\management\repository\CamereRepository.class

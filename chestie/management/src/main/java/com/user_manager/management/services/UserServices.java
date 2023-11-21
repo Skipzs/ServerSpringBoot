@@ -38,22 +38,25 @@ public class UserServices {
         userRepository.deleteByUsername(username);
     }
 
+    public String getStatus(String username){
+        return userRepository.checkStatus(username);
+    }
 
     //Get user details by his username
     public User getUserDetailsByUsername(String username){
         return userRepository.getUserDetailByUsername(username);
     }
 
-   /* public ArrayList<String> getNumeServiceMethod(){
-        return userRepository.getNume();
+    public void changePasswordServiceMethod(String username, String oldPassword, String newPassword) {
+        int rowsAffected = userRepository.changePasswordByUsername(newPassword, username, oldPassword);
+
+        if (rowsAffected > 0) {
+            System.out.println("Succes");
+        } else {
+            System.out.println("Fail");
+        }
     }
 
-    public ArrayList<String> getPrenumeServiceMethod(){
-        return userRepository.getPrenume();
-    }
 
-    public ArrayList<String> getStatusServiceMethod(){
-        return userRepository.getStatus();
-    }*/
 
 }

@@ -19,9 +19,5 @@ public class ShowUsersController {
     public List<User> getAllUsers(){
         return userServices.getUsers();
     }
-    @PostMapping("/angajati/save")
-    public void saveUser(@RequestBody User user){
-        userServices.registerNewUserServiceMethod(user.getUsername(), user.getNume(), user.getPrenume(), user.getEmail(), user.getPassword(), user.getStatus());
-    }
 
 }

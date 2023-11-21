@@ -9,15 +9,26 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, String> {
+
+
+
     @Transactional
     @Modifying
     @Query(value = "DELETE FROM angajati WHERE username = :username", nativeQuery = true)
     void deleteByUsername(@Param("username") String username);
+
+    @Transactional
+    @Modifying
+    @Query(value = "UPDATE angajati SET password = ?1 WHERE username=?2 and password =?3",nativeQuery = true)
+    int changePasswordByUsername(String newPassword, String username, String oldPassword);
+
+    @Query(value = "SELECT status FROM angajati WHERE username = :username",nativeQuery = true)
+    String checkStatus(@Param("username")String username);
+
     @Query(value = "SELECT username FROM angajati WHERE username = :username",nativeQuery = true)
     List<String> checkUsername(@Param("username")String username);
 

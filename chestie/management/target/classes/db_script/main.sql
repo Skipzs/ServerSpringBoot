@@ -14,3 +14,9 @@ CREATE TABLE angajati(
     status VARCHAR(30) NOT NULL
 );
 
+CREATE TABLE camere(
+                         id INT(11) primary key  NOT NULL AUTO_INCREMENT,
+                         status TEXT NOT NULL,
+                         obs TEXT
+);
+
