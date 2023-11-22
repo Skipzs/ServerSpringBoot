@@ -1,6 +1,7 @@
 package com.user_manager.management.repository;
 
 import com.user_manager.management.models.Camere;
+import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -20,6 +21,11 @@ public interface CamereRepository extends CrudRepository<Camere, Integer> {
 
     @Query(value = "SELECT id FROM camere WHERE id = :id",nativeQuery = true)
     List<Integer> checkId(@Param("id")int id);
+    @Transactional
+    @Modifying
+    @Query(value = "UPDATE camere SET obs =?1, status =?2 WHERE id =?3",nativeQuery = true)
+    int changeCameraById(String obs, String status, int id);
+
 
 
 

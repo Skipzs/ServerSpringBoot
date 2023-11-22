@@ -1,3 +1,4 @@
+C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\rest_controllers\CamereChangeController.java
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\services\UserServices.java
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\repository\UserRepository.java
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\services\CamereServices.java
@@ -6,6 +7,7 @@ C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\ManagementApplication.java
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\models\Camere.java
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\rest_controllers\DeleteUserController.java
+C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\models\ChangeCamera.java
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\rest_controllers\ShowUsersController.java
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\models\User.java
 C:\Users\adria\Desktop\PROIECT\Server\chestie\management\src\main\java\com\user_manager\management\repository\CamereRepository.java

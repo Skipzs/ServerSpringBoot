@@ -38,4 +38,14 @@ public class CamereServices {
         return camere;
     }
 
+
+    public void changeCameraServiceMethod(int id, String obs, String status) {
+        int rowsCamereAffected = camereRepository.changeCameraById(obs, status, id);
+
+        if (rowsCamereAffected > 0) {
+            System.out.println("Succes");
+        } else {
+            System.out.println("Fail");
+        }
+    }
 }
