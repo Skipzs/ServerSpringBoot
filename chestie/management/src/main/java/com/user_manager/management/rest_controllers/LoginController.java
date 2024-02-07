@@ -24,7 +24,6 @@ public class LoginController {
     public ResponseEntity authenticateUser(@RequestBody Login login) {
 
         // get username
-
         List<String> username = userServices.checkUsernameServiceMethod(login.getUsername());
 
         //Verificarea username-ului
@@ -36,13 +35,11 @@ public class LoginController {
         String password = userServices.checkPassByUsernameServiceMethod(login.getUsername());
 
         //Validarea parolei
-
         if (!login.getPassword().equals(password)){
             return new ResponseEntity("Numele utilizatorului sau parola sunt gresite", HttpStatus.BAD_REQUEST);
         }
 
         User user = userServices.getUserDetailsByUsername(login.getUsername());
-
 
         return new ResponseEntity(user,HttpStatus.OK);
 

@@ -38,19 +38,6 @@ public interface UserRepository extends CrudRepository<User, String> {
     @Query(value = "SELECT * FROM angajati WHERE username = :username", nativeQuery = true)
     User getUserDetailByUsername(@Param("username")String username);
 
-    /*@Query(value = "SELECT nume FROM angajati",nativeQuery = true)
-    ArrayList<String> getNume();
-
-    @Query(value = "SELECT prenume FROM angajati",nativeQuery = true)
-    ArrayList<String> getPrenume();
-
-    @Query(value = "SELECT status FROM angajati",nativeQuery = true)
-    ArrayList<String> getStatus();
-
-     */
-
-
-
 
 @Transactional
 @Modifying
