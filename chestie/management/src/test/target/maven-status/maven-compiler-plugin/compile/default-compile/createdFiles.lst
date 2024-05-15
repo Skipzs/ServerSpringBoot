@@ -1,8 +1,0 @@
-com\user_manager\management\rest_controllers\LoginController.class
-com\user_manager\management\rest_controllers\UserControler.class
-com\user_manager\management\ManagementApplication.class
-com\user_manager\management\rest_controllers\SignUpController.class
-com\user_manager\management\services\UserServices.class
-com\user_manager\management\repository\UserRepository.class
-com\user_manager\management\models\Login.class
-com\user_manager\management\models\User.class
