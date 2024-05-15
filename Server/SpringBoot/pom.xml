@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.user_manager</groupId>
-	<artifactId>management</artifactId>
+	<artifactId>SpringBoot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>management</name>
 	<description>management users</description>
