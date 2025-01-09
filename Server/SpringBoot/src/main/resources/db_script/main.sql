@@ -20,3 +20,5 @@ CREATE TABLE camere(
                          obs TEXT
 );
 
+CREATE TABLE
+
